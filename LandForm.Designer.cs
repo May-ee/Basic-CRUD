@@ -104,6 +104,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlDark;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -129,6 +130,7 @@
             this.agebox.Name = "agebox";
             this.agebox.Size = new System.Drawing.Size(287, 39);
             this.agebox.TabIndex = 2;
+            this.agebox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.agebox_KeyPress);
             // 
             // coursebox
             // 
@@ -195,6 +197,7 @@
             this.edpbox.Name = "edpbox";
             this.edpbox.Size = new System.Drawing.Size(287, 39);
             this.edpbox.TabIndex = 0;
+            this.edpbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.edpbox_KeyPress);
             // 
             // LandForm
             // 
@@ -222,6 +225,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Basic CRUD";
             this.Load += new System.EventHandler(this.LandForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LandForm_KeyDown);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
