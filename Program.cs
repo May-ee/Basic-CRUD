@@ -16,7 +16,7 @@ namespace BasicCRUDMohammad
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LandForm());
+            Application.Run(new LogIn());
         }
     }
 }
